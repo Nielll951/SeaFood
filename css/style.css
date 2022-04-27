@@ -9,9 +9,12 @@ a {
    text-decoration: none;
 }
 
+button {
+   cursor: pointer;
+}
+
 body {
    font-family: 'Roboto', sans-serif;
-   /* font-family: 'Roboto Slab', serif; */
    font-size: 16px;
    line-height: 19px;
    font-weight: 400;
@@ -24,6 +27,7 @@ body {
 }
 
 .header {
+   
 }
 
 .header__top {
@@ -40,6 +44,7 @@ body {
 }
 
 .menu {
+   margin-top: 16px;
 }
 
 .menu__list {
@@ -56,6 +61,11 @@ body {
    line-height: 21px;
    font-weight: 500;
    color: #001E64;
+   transition: all .5s;
+}
+
+.menu__link:hover {
+   border-bottom: 1px solid #001E64;
 }
 
 .phone {
@@ -64,4 +74,72 @@ body {
 }
 
 .phone__img {
+}
+
+.header__content {
+   background-image: url(../images/header-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.title {
+   font-family: 'Roboto Slab', serif;
+   color: #001E64;
+   font-size: 72px;
+   line-height: 95px;
+   font-weight: 700;
+   max-width: 589px;
+   padding: 200px 0 130px 112px;
+}
+
+.header__slider {
+   max-width: 522px;
+   padding: 57px 0 135px 112px;
+}
+
+.header__slider-item {
+}
+
+.header__slider-text {
+   margin-bottom: 25px;
+   font-size: 18px;
+   line-height: 22px;
+   color: #fff;
+}
+
+.slick-prev,
+.slick-next {
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   position: absolute;
+   left: 40px;
+}
+
+.slick-prev {
+   top: 0;
+}
+
+.slick-next {
+   bottom: 0;
+}
+
+.slick-dots {
+   list-style: none;
+}
+
+.slick-dots button {
+   border: none;
+   background-color: transparent;
+   padding: 0;
+}
+
+.header__content-btn {
+}
+
+.header__content-box {
+}
+
+.header__content-link {
 }
