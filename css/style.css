@@ -33,7 +33,7 @@ body {
 .header__top {
    display: flex;
    justify-content: space-between;
-   padding-top: 27px;
+   padding-top: 20px;
 }
 
 .logo {
@@ -44,7 +44,7 @@ body {
 }
 
 .menu {
-   margin-top: 16px;
+   margin-top: 10px;
 }
 
 .menu__list {
@@ -69,7 +69,7 @@ body {
 }
 
 .phone {
-   margin-top: 11px;
+   margin-top: 3px;
    margin-right: 43px;
 }
 
@@ -80,22 +80,26 @@ body {
    background-image: url(../images/header-bg.png);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center;
+   background-position: top;
+   padding-bottom: 20px;
+   margin-top: -103px;
+   height: 94                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        vh;
+   min-height: calc(95vh - 50px);
 }
 
 .title {
    font-family: 'Roboto Slab', serif;
    color: #001E64;
    font-size: 72px;
-   line-height: 95px;
+   line-height: 90px;
    font-weight: 700;
    max-width: 589px;
-   padding: 200px 0 130px 112px;
+   padding: 130px 0 20px 112px;
 }
 
 .header__slider {
    max-width: 522px;
-   padding: 57px 0 135px 112px;
+   padding: 40px 0 135px 112px;
 }
 
 .header__slider-item {
@@ -127,19 +131,64 @@ body {
 
 .slick-dots {
    list-style: none;
+   position: absolute;
+   left: 35px;
+   top: 58px;
+   bottom: 55px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .slick-dots button {
    border: none;
    background-color: transparent;
    padding: 0;
+   color: #fff;
+   font-size: 24px;
+   line-height: 28px;
+   opacity: 0.5;
+}
+
+.slick-active button {
+   opacity: 1;
+}
+
+.slick-dots button::before {
+   content: "0";
+}
+
+.slick-dots li:nth-child(n+10) button::before {
+   content: "";
 }
 
 .header__content-btn {
+   font-family: 'Roboto Slab', serif;
+   font-weight: 700;
+   color: #fff;
+   font-size: 24px;
+   line-height: 32px;
+   padding: 14px 88px;
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, .5);
+   margin-left: 112px;
+   display: inline-block;
+   transform: translateY(-100px);
+   position: absolute;
 }
 
 .header__content-box {
+   display: flex;
+   margin-left: 100%;
+   margin-right: 30px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #fff;
 }
 
 .header__content-link {
+}
+
+.header__content-link--active {
+   font-weight: 700;
 }
