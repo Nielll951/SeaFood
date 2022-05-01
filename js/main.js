@@ -19,6 +19,7 @@ $(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       asNavFor: '.product__name',
-      fade: true
+      fade: true,
+      arrows: false
     });
 });
