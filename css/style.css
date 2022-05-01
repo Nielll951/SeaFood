@@ -176,6 +176,12 @@ body {
    display: inline-block;
    transform: translateY(-100px);
    position: absolute;
+   transition: all .3s;
+}
+
+.header__content-btn:hover {
+   color: #001E64;
+   background-color: rgba(255, 255, 255, 1);
 }
 
 .header__content-box {
@@ -298,6 +304,12 @@ body {
    text-transform: uppercase;
    border: 1px solid #001E64;
    border-radius: 20px;
+   transition: all .3s;
+}
+
+.product__content-btn:hover {
+   color: #fff;
+   background-color: #001E64;
 }
 
 .seafood-box {
@@ -387,3 +399,80 @@ body {
    max-width: 530px;
    margin: 0 auto;
 }
+
+.contacts {
+   background-image: url(../images/contacts-bg.jpg);
+   background-repeat: no-repeat;;
+}
+
+.contacts__box {
+   margin-left: auto;
+   width: 390px;
+   background-color: #fff;
+   padding: 33px 0 33px 20px;
+}
+
+.contacts__box-text {
+   width: 195px;
+   font-family: 'Roboto Slab', serif;
+   font-size: 18px;
+   line-height: 24px;
+   color: #001E64;
+   margin-bottom: 30px;
+}
+
+.contacts__box-list {
+   list-style-type: none;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.contacts__box-item {
+   margin-top: 30px;
+}
+
+.contacts__box-item span {
+   display: block;
+}
+
+.footer {
+   padding: 25px 0 110px;
+}
+
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   padding: 0 45px 0 23px;
+}
+
+.footer__inner .menu {
+   padding-bottom: 30px;
+}
+
+.footer .menu__link {
+   color: #232222;
+}
+
+.footer__social {
+}
+
+.footer__social-list {
+   list-style-type: none;
+   display: flex;
+   padding-bottom: 19px;
+}
+
+.footer__social-item + .footer__social-item {
+   margin-left: 10px;
+}
+
+.footer__social-link path {
+   transition: all .3s;
+}
+
+.footer__social-link:hover path {
+   fill: #001E64;
+}
+
+
