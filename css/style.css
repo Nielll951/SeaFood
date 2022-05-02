@@ -482,6 +482,7 @@ body {
    padding: 13px 0;
    position: relative;
    display: none;
+   z-index: 10;
 }
 
 .menu__btn::after,
@@ -508,6 +509,12 @@ body {
    background-color: #001E64;
 }
 
+@media (max-width: 1160px) {
+   .product__name {
+      width: 350px;
+   }
+}
+
 @media (max-width: 1000px) {
    .menu__list {
       position: absolute;
@@ -517,6 +524,7 @@ body {
       display: block;
       top: -350px;
       transition: all .5s;
+      z-index: 5;
    }
 
    .menu__list.menu__list--active {
@@ -545,10 +553,118 @@ body {
   .menu__link:hover {
    border: none;
    }
+
+   .product__name {
+      width: 250px;
+   }
+}
+
+@media (max-width: 890px) {
+   .product__inner {
+      display: block;
+   }
+
+   .product__content {
+      margin: 0 auto;
+   }
+
+   .product__name {
+      width: 100%;
+      padding-top: 0;
+      margin-bottom: 80px;
+   }
+
+   .product__name-item + .product__name-item {
+      margin-top: 0;
+   }
+
+   .product__name-item.slick-current {
+      line-height: 44px;
+   }
+
+   .product__name .slick-dots {
+      left: 0;
+      right: 0;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .product__name .slick-dots button {
+      width: 16px;
+      height: 16px;
+      font-size: 0;
+      padding: 0;
+      border-radius: 50%;
+      background-color: #c4c4c4;
+      margin: 0 10px;
+   }
 }
 
 @media (max-width: 745px) {
-   
+   .title {
+      font-size: 50px;
+      line-height: 66px;
+      max-width: 100%;
+      padding-top: 130px;
+      padding-left: 0;
+      text-align: center;
+   }
+}
+
+@media (max-width: 470px) {
+   .title {
+      font-size: 34px;
+      line-height: 44px;
+   }
+
+   .header__slider {
+      padding-left: 50px;
+   }
+
+   .slick-dots {
+      left: 5px;
+   }
+
+   .slick-prev,
+   .slick-next {
+      left: 10px;
+   }
+
+   .header__content-btn {
+      margin-left: 50px;
+   }
+}
+
+@media (max-width: 360px) {
+   .title {
+      padding-top: 125px;
+   }
+
+   .phone {
+      margin-right: 0;
+   }
+
+   .logo {
+      margin-left: 0;
+   }
+
+   .menu__list {
+      left: 10%;
+      right: 10%;
+   }
+
+   .header__slider {
+      padding-left: 0;
+      padding-top: 0;
+   }
+
+   .header__content-btn {
+      margin-left: 0;
+   }
+
+   .logo__img {
+      width: 60%;
+   }
 }
 
 
