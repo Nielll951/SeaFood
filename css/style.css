@@ -186,7 +186,7 @@ body {
 
 .header__content-box {
    display: flex;
-   margin-left: 100%;
+   justify-content: flex-end;
    margin-right: 30px;
    font-size: 18px;
    line-height: 21px;
@@ -473,6 +473,82 @@ body {
 
 .footer__social-link:hover path {
    fill: #001E64;
+}
+
+.menu__btn {
+   width: 40px;
+   border: none;
+   background-color: transparent;
+   padding: 13px 0;
+   position: relative;
+   display: none;
+}
+
+.menu__btn::after,
+.menu__btn::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   right: 0;
+   height: 4px;
+   background-color: #001E64;
+}
+
+.menu__btn::after {
+   bottom: 0;
+}
+
+.menu__btn::before {
+   top: 0;
+}
+
+.menu__btn span {
+   display: block;
+   height: 4px;
+   background-color: #001E64;
+}
+
+@media (max-width: 1000px) {
+   .menu__list {
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      background-color: #fff;
+      display: block;
+      top: -350px;
+      transition: all .5s;
+   }
+
+   .menu__list.menu__list--active {
+      top: 70px;
+   }
+
+   .menu__btn {
+      display: block;
+   }
+
+   .menu {
+      margin-left: auto;
+      margin: 3px 20px 0 auto;
+   }
+
+   .menu__item + .menu__item {
+      margin-left: 0;
+   }
+
+  .menu__link {
+     padding: 20px 0;
+     display: block;
+     text-align: center;
+  }
+
+  .menu__link:hover {
+   border: none;
+   }
+}
+
+@media (max-width: 745px) {
+   
 }
 
 
