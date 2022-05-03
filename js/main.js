@@ -6,7 +6,7 @@ $(function(){
       fade: true,
       responsive: [
         {
-          breakpoint: 361,
+          breakpoint: 371,
           settings: {
             dots: false,
             arrows: false,
@@ -32,7 +32,14 @@ $(function(){
             slidesToShow: 3,
             arrows: false,
             dots: true
-          }
+          },
+          breakpoint: 461,
+          settings: {
+            vertical: false,
+            slidesToShow: 1,
+            arrows: false,
+            dots: true
+          },
         } 
       ]
     });
